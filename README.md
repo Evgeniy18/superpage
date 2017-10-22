@@ -1,0 +1,2 @@
+# superpage
+Just cool page.
