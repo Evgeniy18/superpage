@@ -1,0 +1,96 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	background-color: #999999;
+}
+
+header {
+	width: 100%;
+	height: 80px;
+	color: #070C49;
+	background-color: #070C49;
+}
+
+header .logo {
+	width: 100px;
+	height: 40px;
+	margin: 20px 50px 20px 50px;
+	float: left;
+	background: url('../img/logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.menu {
+	float: left;
+	width: 70%;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+#nav {
+	list-style: none; /* стиль маркера */
+}
+
+#nav li {
+	display: block;
+	float: left;
+	position: relative;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-align: center;
+}
+
+#nav li a {
+	display: block;
+	padding-top: 12px;
+	border-radius:2px;
+	/*width: 100px;*/
+	height: 28px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#nav li a:hover {
+	background: #710096;
+}
+
+#nav ul {
+	list-style: none;
+	position: absolute;
+	left: -9999px;
+	opacity:0; /* Начальное состояние прозрачности */
+	transition: 0.4s linear opacity;
+}
+
+#nav ul li {
+	display: block;
+	float: none;
+	padding-bottom: 5px;
+}
+
+#nav ul a {
+	white-space: nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+	display: block;
+}
+
+#nav li:hover ul{ 
+	left: 0; 
+	opacity: 1; 
+	background: #070C49;
+}
+
+.content {
+	width: 100%;
+	height: 500px;
+	/* background: #FFFFFF; */
+}
+
+footer {
+	width: 100%;
+	height: 80px;
+	background: #3E0303;
+}
